@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Yati Phoo Pwint Thwe - Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Yati Phoo Pwint Thwe
+
+          <div class="contact_info">
+            <a
+              class="icon-circle"
+              href="mailto:yatiphoopwintthwe@outlook.sg"
+              aria-label="Email"
+            >
+              <img src="./html_finalprojimages/envelope.png" alt="" />
+            </a>
+            <a class="email-link" href="mailto:yatiphoopwintthwe@outlook.sg"
+              >yatiphoopwintthwe@outlook.sg</a
+            >
+          </div>
+        </div>
+
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#contact-title">Profile</a>
+          <a class="topmenu" href="#projects">Porfolio</a>
+
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+        </div>
+      </div>
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="html_finalprojimages/ppf.jpg" class="profile-image" />
+      </div>
+
+      <div>
+        <p>
+          A dedicated Information Technology graduate specializing in web
+          development with a solid grasp of both front-end and back-end
+          technologies. Developed and deployed full stack projects involving
+          responsive design, database management, and API integration. Excited
+          to grow as a Full Stack, Front-End, or Back-End Developer in a
+          collaborative environment.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="contact-title">
+      <h2>Profile</h2>
+      <div style="clear: both"></div>
+
+      <div class="contact">
+        <a
+          class="icon-circle"
+          href="https://www.linkedin.com/in/yati-phoo-pwint-thwe-997857238/"
+          target="_blank"
+          rel="noopener"
+        >
+          <img src="./html_finalprojimages/Linkedind.png" alt="LinkedIn" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/yati-phoo-pwint-thwe-997857238/"
+          target="_blank"
+          rel="noopener"
+          >LinkedIn Profile</a
+        >
+      </div>
+
+      <div class="contact">
+        <a
+          class="icon-circle"
+          href="https://github.com/YatiPhooPwintThwe"
+          target="_blank"
+          rel="noopener"
+        >
+          <img src="./html_finalprojimages/ghb.png" alt="GitHub" />
+        </a>
+        <a
+          href="https://github.com/YatiPhooPwintThwe"
+          target="_blank"
+          rel="noopener"
+          >GitHub Profile</a
+        >
+      </div>
+
+      <!-- Add more skills here -->
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>Porfolio (Projects)</h2>
+      <div style="clear: both"></div>
+
+      <div id="projects-container" class="projects-container">
+        <!-- MiniCart Project Card -->
+        <div class="project-card">
+          <div class="card-grid">
+            <!-- two previews -->
+            <img
+              src="./html_finalprojimages/user.gif"
+              alt="MiniCart user checkout preview"
+              class="project-media"
+            />
+            <img
+              src="./html_finalprojimages/admin.gif"
+              alt="MiniCart admin dashboard preview"
+              class="project-media"
+            />
+
+            <!-- full-width content -->
+            <div class="project-content">
+              <h3 class="project-title">🛍️ Full-Stack E-commerce (MiniCart)</h3>
+              <p class="project-subtitle">
+                MERN + GraphQL store with <strong>Stripe Checkout</strong>,
+                role-based admin dashboard, dispatch tracking, and transactional
+                emails.
+              </p>
+
+              <ul class="features">
+                <li>
+                  🛒 Cart and Checkout with coupons, shipping/GST
+                  (server-confirmed Stripe).
+                </li>
+                <li>
+                  📦 Status flow: Pending → Processing → <b>Dispatched</b> →
+                  Delivered.
+                </li>
+                <li>📈 Admin KPIs and charts (line/bar/pie).</li>
+                <li>
+                  ✉️ Mailtrap emails for order confirmation & status updates.
+                </li>
+                <li>🔒 JWT auth, RBAC and MongoDB transactions.</li>
+                <li>Render auto-deploy.</li>
+              </ul>
+
+              <div class="badge-row">
+                <span class="badge">React</span>
+                <span class="badge">Node/Express</span>
+                <span class="badge">GraphQL (Apollo)</span>
+                <span class="badge">MongoDB</span>
+                <span class="badge">Redis</span>
+                <span class="badge">Stripe</span>
+                <span class="badge">Tailwind</span>
+                <span class="badge">DaisyUI</span>
+              </div>
+
+              <div class="actions">
+                <a
+                  class="btn"
+                  href="https://mini-cart-zcu2.onrender.com"
+                  target="_blank"
+                  rel="noopener"
+                  >🔗 Live Demo</a
+                >
+                <a
+                  class="btn btn--ghost"
+                  href="https://github.com/YatiPhooPwintThwe/ecommerce"
+                  target="_blank"
+                  rel="noopener"
+                  >🧩 GitHub</a
+                >
+              </div>
+
+              <details style="margin-top: 18px; font-size: 18px">
+                <summary>🔐 Demo Credentials</summary>
+                <div
+                  style="
+                    margin-top: 18px;
+                    padding: 10px;
+                    border: 1px dashed #e5e7eb;
+                    border-radius: 10px;
+                    background: #f8fafc;
+                    color: #0f172a;
+                  "
+                >
+                  <div>
+                    <b>Stripe Test Card</b>: 4242 4242 4242 4242 · any future
+                    date · any CVC · any ZIP
+                  </div>
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div style="clear: both"></div>
+  </body>
+</html>
