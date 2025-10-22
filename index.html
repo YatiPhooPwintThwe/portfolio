@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Yati Phoo Pwint Thwe - Portfolio</title>
+    <meta charset="utf-8" />
+    <title>Yati Phoo Pwint Thwe Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./style.css" />
-    <script src="./script.js"></script>
+    <script defer src="./script.js"></script>
   </head>
   <body>
     <!-- Navigation Bar -->
@@ -11,27 +13,24 @@
       <div id="home">
         <div class="profile_name">
           Yati Phoo Pwint Thwe
-
           <div class="contact_info">
             <a
               class="icon-circle"
               href="mailto:yatiphoopwintthwe@outlook.sg"
               aria-label="Email"
             >
-              <img src="./html_finalprojimages/envelope.png" alt="" />
+              <img src="./html_finalprojimages/envelope.png" alt="Email icon" />
             </a>
-            <a class="email-link" href="mailto:yatiphoopwintthwe@outlook.sg"
-              >yatiphoopwintthwe@outlook.sg</a
-            >
+            <a class="email-link" href="mailto:yatiphoopwintthwe@outlook.sg">
+              yatiphoopwintthwe@outlook.sg
+            </a>
           </div>
         </div>
 
         <div class="topdiv">
           <a class="topmenu" href="#about-me">About Me</a>
           <a class="topmenu" href="#contact-title">Profile</a>
-          <a class="topmenu" href="#projects">Porfolio</a>
-
-          <!-- Add the links for Skills, Projects and Recommendation here -->
+          <a class="topmenu" href="#projects">Portfolio</a>
         </div>
       </div>
     </nav>
@@ -39,22 +38,26 @@
     <!-- About Me -->
     <section id="about-me" class="container">
       <div>
-        <img src="html_finalprojimages/ppf.jpg" class="profile-image" />
+        <img
+          src="html_finalprojimages/ppf.jpg"
+          class="profile-image"
+          alt="Portrait of Yati Phoo Pwint Thwe"
+        />
       </div>
 
       <div>
         <p>
           A dedicated Information Technology graduate specializing in web
           development with a solid grasp of both front-end and back-end
-          technologies. Developed and deployed full stack projects involving
-          responsive design, database management, and API integration. Excited
-          to grow as a Full Stack, Front-End, or Back-End Developer in a
+          technologies. Built and deployed full-stack projects featuring
+          responsive design, database management, and API integrations. Excited
+          to grow as a Full-Stack, Front-End, or Back-End Developer in a
           collaborative environment.
         </p>
       </div>
     </section>
 
-    <!-- Skills -->
+    <!-- Profile / Links -->
     <section id="contact-title">
       <h2>Profile</h2>
       <div style="clear: both"></div>
@@ -65,8 +68,12 @@
           href="https://www.linkedin.com/in/yati-phoo-pwint-thwe-997857238/"
           target="_blank"
           rel="noopener"
+          aria-label="LinkedIn"
         >
-          <img src="./html_finalprojimages/Linkedind.png" alt="LinkedIn" />
+          <img
+            src="./html_finalprojimages/Linkedind.png"
+            alt="LinkedIn icon"
+          />
         </a>
         <a
           href="https://www.linkedin.com/in/yati-phoo-pwint-thwe-997857238/"
@@ -82,8 +89,9 @@
           href="https://github.com/YatiPhooPwintThwe"
           target="_blank"
           rel="noopener"
+          aria-label="GitHub"
         >
-          <img src="./html_finalprojimages/ghb.png" alt="GitHub" />
+          <img src="./html_finalprojimages/ghb.png" alt="GitHub icon" />
         </a>
         <a
           href="https://github.com/YatiPhooPwintThwe"
@@ -92,13 +100,11 @@
           >GitHub Profile</a
         >
       </div>
-
-      <!-- Add more skills here -->
     </section>
 
     <!-- Projects -->
     <section class="projects" id="projects">
-      <h2>Porfolio (Projects)</h2>
+      <h2>Portfolio (Projects)</h2>
       <div style="clear: both"></div>
 
       <div id="projects-container" class="projects-container">
@@ -128,19 +134,17 @@
 
               <ul class="features">
                 <li>
-                  🛒 Cart and Checkout with coupons, shipping/GST
+                  🛒 Cart & Checkout with coupons, shipping/GST
                   (server-confirmed Stripe).
                 </li>
                 <li>
-                  📦 Status flow: Pending → Processing → <b>Dispatched</b> →
+                  📦 Order flow: Pending → Processing → <b>Dispatched</b> →
                   Delivered.
                 </li>
-                <li>📈 Admin KPIs and charts (line/bar/pie).</li>
-                <li>
-                  ✉️ Mailtrap emails for order confirmation & status updates.
-                </li>
-                <li>🔒 JWT auth, RBAC and MongoDB transactions.</li>
-                <li>Render auto-deploy.</li>
+                <li>📈 Admin KPIs & charts (line/bar/pie).</li>
+                <li>✉️ Mailtrap emails for order confirmation & updates.</li>
+                <li>🔒 JWT auth, RBAC, MongoDB transactions.</li>
+                <li>🚀 Render auto-deploy on merge.</li>
               </ul>
 
               <div class="badge-row">
@@ -192,8 +196,83 @@
             </div>
           </div>
         </div>
+
+        <!-- Netflix Clone Project Card -->
+        <div class="project-card">
+          <div class="card-grid">
+            <!-- two previews (replace with your GIFs/screens) -->
+            <img
+              src="./html_finalprojimages/nf.jpg"
+              alt="Netflix clone home/trending preview"
+              class="project-media"
+            />
+            
+            <!-- full-width content -->
+            <div class="project-content">
+              <h3 class="project-title">🎬 Full-Stack Netflix Clone</h3>
+              <p class="project-subtitle">
+                Production-style streaming UI with protected routes, email
+                verification, search history, and TMDB integration.
+              </p>
+
+              <ul class="features">
+                <li>
+                  🎞️ Browse movies/TV from <b>TMDB</b>: trending hero, category
+                  sliders, and similar content.
+                </li>
+                <li>
+                  ▶️ Trailers via <b>react-youtube</b> with graceful fallback
+                  and chevron/keyboard navigation.
+                </li>
+                <li>
+                  🔎 Search Movie/TV/Person; click-through opens
+                  <code>/watch/:type/:id</code>.
+                </li>
+                <li>
+                  🕘 Search history (create, list, delete) with image, type
+                  badge, and timestamp.
+                </li>
+                <li>✉️ Mailtrap for verification/reset emails.</li>
+                <li>🔐 JWT auth, route guards, protected API.</li>
+                <li>🚀 Render auto-deploy on merge.</li>
+              </ul>
+
+              <div class="badge-row">
+                <span class="badge">React + Vite</span>
+                <span class="badge">Zustand</span>
+                <span class="badge">Tailwind</span>
+                <span class="badge">DaisyUI</span>
+                <span class="badge">Node/Express</span>
+                <span class="badge">MongoDB (Mongoose)</span>
+                <span class="badge">JWT</span>
+                <span class="badge">Mailtrap</span>
+                <span class="badge">TMDB API</span>
+              </div>
+
+              <div class="actions">
+                <!-- Update these -->
+                <a
+                  class="btn"
+                  href="https://netflix-wu2u.onrender.com"
+                  target="_blank"
+                  rel="noopener"
+                  >🔗 Live Demo</a
+                >
+                <a
+                  class="btn btn--ghost"
+                  href="https://github.com/YatiPhooPwintThwe/netflix"
+                  target="_blank"
+                  rel="noopener"
+                  >🧩 GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Netflix card -->
       </div>
     </section>
+
     <div style="clear: both"></div>
   </body>
 </html>
