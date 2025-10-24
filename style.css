@@ -385,7 +385,7 @@ button:hover {
   #about-me p { margin: 12px 0 0; font-size: 18px; }
 
   /* HEADINGS */
-  h2 { float: none; margin: 16px 0 8px; font-size: 26px; text-align: center; }
+  h2 { float: none; margin: 28px 0 14px; font-size: 26px; text-align: center; }
 
   /* SKILLS */
   .all_skills { justify-content: center; gap: 12px; padding: 0 12px; }
