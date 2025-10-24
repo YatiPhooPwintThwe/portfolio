@@ -17,18 +17,14 @@ body {
   font-weight: bolder;
 }
 
-/* LEFT: name + email on a single line */
-
-/* your name (you’re using <span class="profile_name"> in nav) */
 .profile_name {
   float: left;
   padding-left: 2cm;
   display: flex;
-  flex-direction: column; /* <— stack vertically */
+  flex-direction: column;
   row-gap: 5px;
   font-size: 28px;
   margin-top: 3px;
-  /* Add the styles here */
 }
 
 .profile_name .contact_info {
@@ -38,12 +34,9 @@ body {
   align-items: center;
   flex-direction: row;
 }
-/* make #home wrap its floated children (name/email + menu) */
-#home::after {
-  content: "";
-  display: block;
-  clear: both;
-}
+
+/* make #home wrap its floated children */
+#home::after { content: ""; display: block; clear: both; }
 
 .topmenu {
   color: black;
@@ -60,22 +53,13 @@ body {
   color: white;
   font-weight: bolder;
   text-decoration: underline;
-  /* Add the styles here */
 }
 
-.topdiv {
-  float: right;
-  padding-right: 1cm;
-}
+.topdiv { float: right; padding-right: 1cm; }
 
-.contact_info img {
-  width: 25px;
-  margin-right: 10px;
-}
+.contact_info img { width: 25px; margin-right: 10px; }
 
-.contact {
-  margin-top: 35px;
-}
+.contact { margin-top: 35px; }
 
 .contact img {
   width: 25px;
@@ -86,7 +70,6 @@ body {
 }
 
 /* Titles */
-
 h2 {
   text-align: justify;
   font-size: 35px;
@@ -111,13 +94,9 @@ h2 {
 }
 
 /* Used in the About Me sections */
-
-.container {
-  display: flex;
-}
+.container { display: flex; }
 
 /* About Me */
-
 .about-me {
   display: flex;
   align-items: center;
@@ -131,9 +110,7 @@ h2 {
   line-height: 1.5;
 }
 
-#about-me.container {
-  gap: 32px; /* keeps image and text separated */
-}
+#about-me.container { gap: 32px; }
 
 .profile-image {
   width: 280px;
@@ -145,12 +122,7 @@ h2 {
 }
 
 /* Skills */
-
-.all_skills {
-  display: flex;
-  flex-direction: row;
-  flex-flow: wrap;
-}
+.all_skills { display: flex; flex-direction: row; flex-flow: wrap; }
 
 .skill {
   border: 1px solid gray;
@@ -163,11 +135,7 @@ h2 {
   font-size: 20px;
   box-shadow: 0 3px 10px gray;
 }
-
-.skill img {
-  height: 35px;
-  align-items: center;
-}
+.skill img { height: 35px; align-items: center; }
 
 .skills h6 {
   align-items: center;
@@ -176,7 +144,6 @@ h2 {
   margin-block-end: 5px;
   font-weight: bold;
 }
-
 .skills p {
   align-items: center;
   font-size: 15px;
@@ -185,19 +152,14 @@ h2 {
   margin-block-end: 5px;
 }
 
-.flex_center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+.flex_center { display: flex; align-items: center; justify-content: center; }
 
-/* ===== Projects (clean layout) ===== */
-
+/* ===== Projects ===== */
 .projects-container {
   max-width: 1100px;
-  margin: 60px; /* center the section */
+  margin: 60px;
   display: grid;
-  gap: 52px; /* vertical space between cards */
+  gap: 52px;
 }
 
 .project-card {
@@ -208,7 +170,6 @@ h2 {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
-/* Inside the card: first row is the two previews; second row is full-width content */
 .card-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -223,14 +184,8 @@ h2 {
   border-radius: 12px;
 }
 
-/* Make the description + badges span the full width under the images */
-.project-content {
-  grid-column: 1 / -1; /* span both columns */
-  padding-top: 8px;
-}
-.project-title {
-  font-size: 26px;
-}
+.project-content { grid-column: 1 / -1; padding-top: 8px; }
+.project-title { font-size: 26px; }
 
 .project-subtitle {
   margin: 0 0 10px;
@@ -238,24 +193,11 @@ h2 {
   font-size: 18px;
 }
 
-.features {
-  padding-top: 8px;
-  margin: 0 0 12px 20px;
-}
-.features li {
-  padding-top: 8px;
-  margin: 8px 0;
-  font-size: 18px;
-}
+.features { padding-top: 8px; margin: 0 0 12px 20px; }
+.features li { padding-top: 8px; margin: 8px 0; font-size: 18px; }
 
-/* badges take full width and wrap */
-.badge-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin: 8px 0 12px 0;
-  padding-top: 22px;
-}
+/* badges */
+.badge-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 12px 0; padding-top: 22px; }
 .badge {
   display: inline-block;
   padding: 6px 10px;
@@ -267,12 +209,7 @@ h2 {
 }
 
 /* buttons */
-.actions {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  padding-top: 18px;
-}
+.actions { display: flex; gap: 10px; flex-wrap: wrap; padding-top: 18px; }
 .btn {
   text-decoration: none;
   background: #2563eb;
@@ -282,24 +219,15 @@ h2 {
   font-weight: 700;
   display: inline-block;
 }
-.btn--ghost {
-  background: transparent;
-  color: #2563eb;
-  border: 1px solid #2563eb;
-}
+.btn--ghost { background: transparent; color: #2563eb; border: 1px solid #2563eb; }
 
-/* Make it stack nicely on narrow screens */
+/* Make it stack nicely on narrow screens (already) */
 @media (max-width: 860px) {
-  .card-grid {
-    grid-template-columns: 1fr;
-  }
-  .project-content {
-    grid-column: 1;
-  } /* single column */
+  .card-grid { grid-template-columns: 1fr; }
+  .project-content { grid-column: 1; }
 }
 
 /* Recommendations */
-
 .all_recommendations {
   display: flex;
   align-items: center;
@@ -308,7 +236,6 @@ h2 {
   flex-flow: wrap;
   padding: 20px;
 }
-
 .recommendation {
   font-style: italic;
   text-align: left;
@@ -323,7 +250,6 @@ h2 {
   font-size: 18px;
   height: 150px;
 }
-
 .recommendation span {
   color: #7600bc;
   font-size: 20px;
@@ -331,7 +257,6 @@ h2 {
 }
 
 /* Scroll to Top Button */
-
 .iconbutton {
   width: 48px;
   height: 48px;
@@ -346,8 +271,7 @@ h2 {
   cursor: pointer;
 }
 
-/* Form Pop-up */
-
+/* Popup */
 .popup {
   width: 400px;
   background-color: #e8bcf0;
@@ -357,14 +281,9 @@ h2 {
   transform: translate(-50%, -50%);
   text-align: center;
   position: fixed;
-  /* padding: 30px; */
   visibility: hidden;
 }
-
-.popup img {
-  padding-top: 20px;
-}
-
+.popup img { padding-top: 20px; }
 .popup button {
   background-color: #fff;
   border: 1px solid #7600bc;
@@ -378,7 +297,6 @@ h2 {
   font-size: 20px;
   margin-left: 25%;
 }
-
 .popup button:hover {
   background-color: #fff;
   border: 2px solid #7600bc;
@@ -390,16 +308,12 @@ h2 {
   margin-left: 25%;
 }
 
-/* Recommendation Form */
-
-input,
-textarea {
+/* Forms */
+input, textarea {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  margin: 10px;
-  width: 100%;
+  margin: 10px; width: 100%;
 }
-
 fieldset {
   display: flexbox;
   align-content: center;
@@ -412,7 +326,6 @@ fieldset {
 }
 
 /* Buttons */
-
 button {
   background-color: #fff;
   border: 1px solid #7600bc;
@@ -425,7 +338,6 @@ button {
   width: 2in;
   font-size: 20px;
 }
-
 button:hover {
   background-color: #7600bc;
   border: 1px solid #7600bc;
@@ -434,4 +346,81 @@ button:hover {
   border-radius: 6px;
   text-align: center;
   cursor: pointer;
+}
+
+/* ===========================
+   MOBILE LAYOUT OVERRIDES
+   (minimal changes)
+   =========================== */
+@media (max-width: 860px) {
+  /* NAV */
+  #home {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+    padding: 12px 16px;
+  }
+  .profile_name {
+    float: none;
+    padding-left: 0;
+    font-size: 22px;
+  }
+  .profile_name .contact_info { flex-wrap: wrap; row-gap: 6px; }
+  .email-link { word-break: break-all; }
+
+  .topdiv {
+    float: none;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+  .topmenu { padding: 10px 0; margin: 0; font-size: 18px; }
+
+  /* ABOUT */
+  .container { flex-direction: column; padding: 0 16px; }
+  .profile-image { width: 180px; margin: 16px auto 0; }
+  #about-me p { margin: 12px 0 0; font-size: 18px; }
+
+  /* HEADINGS */
+  h2 { float: none; margin: 16px 0 8px; font-size: 26px; text-align: center; }
+
+  /* SKILLS */
+  .all_skills { justify-content: center; gap: 12px; padding: 0 12px; }
+  .skill { width: 100%; max-width: 360px; margin: 8px; }
+
+  /* PROJECTS */
+  .projects-container { margin: 16px; gap: 24px; }
+  .project-card { padding: 16px; }
+  .card-grid { grid-template-columns: 1fr; gap: 12px; }
+  .project-media { height: 180px; }
+  .project-title { font-size: 22px; }
+  .project-subtitle, .features li { font-size: 16px; }
+  .badge-row { gap: 6px; }
+  .badge { font-size: 0.85rem; }
+  .actions { gap: 8px; }
+  .btn { width: 100%; text-align: center; }
+  .btn--ghost { box-sizing: border-box; }
+
+  /* RECOMMENDATIONS */
+  .all_recommendations { margin-left: 0; justify-content: center; padding: 12px; }
+  .recommendation { width: 100%; max-width: 480px; height: auto; }
+
+  /* POPUP & FORMS */
+  .popup { width: 90%; left: 50%; transform: translate(-50%, -50%); }
+  fieldset { width: 100%; margin: 0; padding: 16px; }
+  button { width: 100%; margin: 16px 0; }
+
+  .iconbutton { width: 42px; height: 42px; right: 4%; bottom: 4%; }
+}
+
+/* Extra-small phones */
+@media (max-width: 480px) {
+  .profile_name { font-size: 20px; }
+  .topmenu      { font-size: 16px; }
+  .project-media { height: 160px; }
+  .project-title { font-size: 20px; }
+  .project-subtitle, .features li { font-size: 15px; }
 }
